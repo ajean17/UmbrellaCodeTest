@@ -68,9 +68,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     btnZip = (Button) findViewById(R.id.btn_get_weather);
     btnZip.setOnClickListener(this);
 
-    TextView 01 = (TextView).findViewByTag(ta);
-    //todayForecast = (RecyclerView) findViewById(R.id.rv_today);
-    //setUpRecyclerView();
+    todayForecast = (RecyclerView) findViewById(R.id.rv_today);
+    setUpRecyclerView();
     /*todayForecastList = new ArrayList<>(0);
     FlexboxLayoutManager layoutManager = new FlexboxLayoutManager(this, FlexDirection.ROW);
     layoutManager.setFlexWrap(FlexWrap.WRAP);
@@ -106,7 +105,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
       rlBanner.setBackgroundColor(getResources().getColor(R.color.weather_warm));
 
     fullForecastList = wd.getForecast();
-    for(int i = 0; i < 8; i++) {
+    for(int i = 0; i < 1; i++) {
       todayForecastList.add(fullForecastList.get(i));
     }
     forecastAdapter.updateDataSet(todayForecastList);

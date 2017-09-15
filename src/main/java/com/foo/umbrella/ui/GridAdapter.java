@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -28,8 +29,7 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.ViewHolder> {
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.grid_item, parent, false);
-        return new ViewHolder(itemView);
+        return null;
     }
 
     @Override
@@ -66,6 +66,7 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.ViewHolder> {
         return 0;
     }
 
+
     class ViewHolder extends RecyclerView.ViewHolder{
         TextView tvTime;
         TextView tvTemp;
@@ -73,9 +74,9 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.ViewHolder> {
 
         public ViewHolder(View itemView) {
             super(itemView);
-            tvTime = (TextView) itemView.findViewById(R.id.tv_forcast_time);
-            tvTemp = (TextView) itemView.findViewById(R.id.tv_forcast_temp);
-            ivFor = (ImageView) itemView.findViewById(R.id.iv_forcast);
+            tvTime = (TextView) itemView.findViewById(R.id.tv_forecast_time);
+            tvTemp = (TextView) itemView.findViewById(R.id.tv_forecast_temp);
+            ivFor = (ImageView) itemView.findViewById(R.id.iv_forecast);
         }
     }
 }

@@ -58,29 +58,10 @@
             android:layout_width="match_parent"
             android:layout_height="40dp" />
 
-        <RelativeLayout
-            android:layout_gravity="center"
-            android:layout_width="50dp"
-            android:layout_height="80dp"
-            android:background="@android:color/holo_green_light">
-            <TextView
-                android:tag="01"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_centerInParent="true" />
-            <ImageView
-                android:tag="02"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_centerInParent="true"
-                android:layout_below="@+id/tv_forcast_one"/>
-            <TextView
-                android:tag="03"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_centerInParent="true"
-                android:layout_below="@+id/iv_forcast_one"/>
-        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_today"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"></android.support.v7.widget.RecyclerView>
     </android.support.v7.widget.CardView>
 
     <EditText

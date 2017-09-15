@@ -10,22 +10,22 @@
         android:layout_height="match_parent"
         android:background="@android:color/holo_green_light">
         <TextView
-            android:id="@+id/tv_forcast_one"
+            android:id="@+id/tv_forecast_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true" />
         <ImageView
-            android:id="@+id/iv_forcast_one"
+            android:id="@+id/iv_forecast"
             android:layout_width="30dp"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:layout_below="@+id/tv_forcast_one"/>
+            android:layout_below="@+id/tv_forecast_one"/>
         <TextView
-            android:id="@+id/tv_forcast_one_temp"
+            android:id="@+id/tv_forecast_temp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:layout_below="@+id/iv_forcast_one"/>
+            android:layout_below="@+id/iv_forecast_one"/>
     </RelativeLayout>
 
 </LinearLayout>
